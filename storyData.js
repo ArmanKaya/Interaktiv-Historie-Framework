@@ -1,3 +1,6 @@
+
+
+
 const storyData = [
     { 
         id: 1,
@@ -17,6 +20,63 @@ const storyData = [
         ],
         image: "img/1funeral.jpeg"
     },
+
+
+
+    {
+        id: 3,
+        texts: ["Oliver: you realize there is something wrong with this whole situation right? we were playing games then he logs off, then boom suddenly his dead? this whole thing makes no sense... we should really look into this..."],
+        choices: [
+            { text: "Agree with Oliver", nextId: 4}
+        ],
+        image: "img/1funeral.jpeg"
+    },
+
+    {
+        id: 4,
+        texts: ["Oliver: Let's go to the forest to find a place where we can sit and discuss our plans"],
+        choices: [
+            { text: "continue", nextId: 5 }
+        ],
+
+    },
+
+    {
+        id: 5,
+        texts: ["Whilst walking in the forest looking for a place to have a seat, you see a shed that looks abandoned.. what do you do?"],
+        choices: [
+            { text: "Approach the shed", nextId: 6},
+            { text: "Walk away", nextId: 101 }
+        ],
+        image: "img/shed.jpeg"
+    },
+
+    /// death
+    {
+        id: 101,
+        texts: ["Whilst walking away the murder came from behind... GAME OVER"],
+        choices: [
+            { text: "Restart", nextId: 1},
+        ],
+    },
+    
+//death end
+
+
+{
+    id: 6,
+    texts: ["You enter the shed, and suddenly you hear a phone buzz.. you pick it up... it's niels' phone... you open it, and see a voice note he tried to send you.. but it was never delivered..."],
+    choices: [
+        { text: "Play the voice mail", nextId: 7 },
+    ],
+    image: "img/shed-inside.jpeg",
+    Sound: "sounds/nielshjelp.mp3",
+},
+
+    
+
+
+ 
 
 
 ]
