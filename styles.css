@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+body {
+    background-color: rgb(125, 125, 125) !important;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: rgb(149, 0, 0);
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #7b1717;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#passage {
+    padding-bottom: 30px;
+}
+
+#passage-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#choices-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+#choices-list li {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#choices-list li:hover {
+    margin-bottom: 10px;
+    color: #8e8e8e;
+    cursor: pointer;
+}
+
+#image {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px !important;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(189, 185, 185) !important;
+    border: black !important;
+
+}
+
+
+.form-control {
+    background-color: rgb(189, 185, 185) !important;
+}
+
+.mt-5.mb-4.text-center {
+    color: white !important;
+}
+
+
+#choices-list li {
+    color: white !important;
+    border-color: #007bff !important;
+}
