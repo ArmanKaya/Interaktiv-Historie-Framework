@@ -70,8 +70,21 @@ const storyData = [
         { text: "Play the voice mail", nextId: 7 },
     ],
     image: "img/shed-inside.jpeg",
+    Sound: "sounds/phonebuzz.mp3"
+},
+
+
+{
+    id: 7,
+    texts: [""],
+    choices: [
+        { text: "Play the voice mail", nextId: 8 },
+    ],
+    image: "img/shed-inside.jpeg",
     Sound: "sounds/nielshjelp.mp3",
 },
+
+
 
     
 

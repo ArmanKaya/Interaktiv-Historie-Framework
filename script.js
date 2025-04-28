@@ -56,19 +56,20 @@ function displayPassage(passageId) {
     }
 
     setImageSource(imageElement, passage.image);
+
+    // --- PLAY SOUND if there is one ---
+    if (passage.Sound) {
+        playSound(passage.Sound);
+    }
+
     if (passage.choices && passage.choices.length > 0) {
         console.log("Choices available.");
         passage.choices.forEach(choice => {
             appendChoiceElement(choicesListElement, choice);
         });
     } else {
-        // Handle the case when there are no choices present
-        // For example, you can display a message or perform some other action
         console.log("No choices available.");
     }
-    
-
-    
 
     updatePlayerNameInPassageText(passageTextElement);
 }
@@ -101,4 +102,12 @@ function updatePlayerNameInPassageText(element) {
     element.innerHTML = element.innerHTML.replace(/\[playerName\]/g, player.playerName);
 }
 
+function playSound(soundFilePath) {
+    const sound = new Audio(soundFilePath);
+    sound.play().catch((error) => {
+        console.error('Error playing sound:', error);
+    });
+}
+
+// Only one initial call to displayPassage needed
 displayPassage(currentPassageId);
