@@ -229,17 +229,7 @@ const storyData = [
         image: "img/deadend.jpeg"
 },
 
-{
-    id: 19,
-    texts: ["You arrive back at the shed.. but something is different... Oliver's mother is there.. and she is holding a machete with dried blood on it.. Oliver asks with confusion what she is doing there... Oliver's mother: stop acting blind. You know why i'm here. same reason Niels was here. Because i murdered him. *suddenly she comes charging towards us*"],
-    choices: [
-        { text: "Attack her"},
-        { text: "Run Away", nextId: 20},
-    ], 
-        image: "img/olivermommachete.jpeg"
 
-
-},
 
 {
     id: 19,
@@ -256,7 +246,7 @@ const storyData = [
 
 {
     id: 20,
-    texts: ["As you run backwards, suddenly you hear sirens and gun shots... it was the police... they shot Oliver's Mother and saved your life... Police Officer: On behalf of all the officers here, we would like to apologize for accusing you of the murder, and applaud you, you really a hero and solved this case, Thank you [playerName]."],
+    texts: ["As you run backwards, suddenly you hear sirens and gun shots... it was the police... they shot Oliver's Mother and saved your life... Police Officer: On behalf of all the officers here, we would like to apologize for accusing you of the murder, and applaud you, you really a hero and solved this case, Thank you [playerName] and Oliver."],
     choices: [
         { text: "Continue", nextId: 21},
     ],
@@ -264,17 +254,10 @@ const storyData = [
     Sounds: "policesiren.wav"
 },
 
+
+
 {
     id: 21,
-    texts: ["As you run backwards, suddenly you hear sirens and gun shots... it was the police... they shot Oliver's Mother and saved your life... Police Officer: On behalf of all the officers here, we would like to apologize for accusing you of the murder, and applaud you, you really a hero and solved this case, Thank you [playerName] and Oliver."],
-    choices: [
-        { text: "Continue", nextId: 22},
-    ],
-
-},
-
-{
-    id: 22,
     texts: ["Congratulations [playerName], you Achieved the happy ending."],
     choices: [
         { text: "Replay", nextId: 1},
@@ -285,6 +268,21 @@ const storyData = [
 
 
 ///alternative endings
+
+{
+    id: 63,
+    texts: ["As you shoot her you suddenly hear sirens..  it was the police.. Police Officer: On behalf of all the officers here, we would like to apologize for accusing you of the murder, and applaud you, you really a hero and solved this case, Thank you [playerName] and Oliver. "],
+    choices: [
+        { text: "continue", nextId: 21},
+    ],
+    image: "img/happy-ending.jpeg",
+    Sounds: "policesiren.wav"
+    
+},
+
+
+
+
 {
     id: 543,
     texts: ["You tried but the baseball bat simply wasnt enough... GAME OVER"],
