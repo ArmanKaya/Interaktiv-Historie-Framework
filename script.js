@@ -1,6 +1,8 @@
 import storyData from './storyData.js';
 import Player from './player.js';
 
+let weapon = null;
+
 const player = new Player();
 let currentPassageId = 1;
 
@@ -44,17 +46,6 @@ function displayPassage(passageId) {
         appendTextElement(passageTextElement, text);
     });
 
-    if (passage.nextId) {
-        console.log('passage.nextId', passage.nextId);
-        const nextPassageElement = document.createElement('button');
-        nextPassageElement.textContent = 'Next';
-        nextPassageElement.addEventListener('click', () => {
-            currentPassageId = passage.nextId;
-            displayPassage(currentPassageId);
-        });
-        choicesListElement.appendChild(nextPassageElement);
-    }
-
     setImageSource(imageElement, passage.image);
 
     // --- PLAY SOUND if there is one ---
@@ -88,11 +79,33 @@ function setImageSource(element, image) {
     element.src = image || '';
 }
 
+function handleUnlock(choice) {
+    if (choice.unlock) {
+        weapon = choice.unlock
+    }
+}
+
+function handlePassageCondition(choice) {
+    if (choice.nextId == 20) {
+        if (weapon == "gun") {
+            return 63;
+        } else if (weapon == "machete") {
+            return 544;
+        } else if (weapon == "baseball") {
+            return 543;
+        }
+    } else {
+        return choice.nextId;
+    }
+}
+
 function appendChoiceElement(parent, choice) {
     const choiceElement = document.createElement('li');
     choiceElement.textContent = choice.text;
     choiceElement.addEventListener('click', () => {
-        currentPassageId = choice.nextId;
+        handleUnlock(choice);
+        let nextId = handlePassageCondition(choice);
+        currentPassageId = nextId;
         displayPassage(currentPassageId);
     });
     parent.appendChild(choiceElement);
