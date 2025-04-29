@@ -86,6 +86,8 @@ function handleUnlock(choice) {
 }
 
 function handlePassageCondition(choice) {
+    console.log(weapon);
+    console.log(choice.nextId);
     if (choice.nextId == 20) {
         if (weapon == "gun") {
             return 63;
