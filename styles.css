@@ -89,7 +89,15 @@ button {
 }
 
 
-#choices-list li {
-    color: white !important;
-    border-color: #007bff !important;
+#choices-list > li {
+
+    color: #f1f1f1 !important;
+    border-color: #000000 !important;
+    font-size: 25px;
+    max-width: 200px;
+}
+
+#choices-list {
+    display: flex;
+    justify-content: space-around;
 }

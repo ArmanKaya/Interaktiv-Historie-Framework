@@ -14,7 +14,7 @@ const storyData = [
 
     {
         id: 2,
-        texts: ["at the funeral [playerName]'s and Oliver discuss with each other and plan to head out to the forest for a walk.. we see a shed and head to it to have a seat, suddenly we hear a buzz sound.. it was niels' phone.."],
+        texts: ["at the funeral [playerName]'s and Oliver discuss with each other"],
         choices: [
             { text: "continue", nextId: 3 }
         ],
@@ -27,7 +27,7 @@ const storyData = [
         id: 3,
         texts: ["Oliver: you realize there is something wrong with this whole situation right? we were playing games then he logs off, then boom suddenly his dead? this whole thing makes no sense... we should really look into this..."],
         choices: [
-            { text: "Agree with Oliver", nextId: 4}
+            { text: "Yea you're right..", nextId: 4}
         ],
         image: "img/1funeral.jpeg"
     },
