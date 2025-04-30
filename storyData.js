@@ -3,7 +3,7 @@ const storyData = [
         id: 1,
         texts: ["At 14, [playerName]'s family moved outside the big city into a smaller town to find silence, but one day that silence was broken. Suddenly, I got a call. My friend Oliver called me. I figured he just wanted to play something, but no. It was our friend Niels. Niels had died. It was labeled as suicide."],
         choices: [
-            { text: "Attend his funeral", nextId: 121},
+            { text: "Attend his funeral", nextId: 2},
         ]
     },
 
@@ -108,7 +108,7 @@ const storyData = [
 
     {
         id: 10,
-        texts: ["Oliver: [playerName].. you realize there is no way back now right? what if the police tracks our dna and links the murder to us... Anyway this is getting really creepy, but it's getting late. We should head back.'"],
+        texts: ["Oliver: [playerName].. you realize there is no way back now right? what if the police tracks our dna and links the murder to us, so whatever we do, we need to be fast!...  but it's getting late. We should head back, for now.."],
         choices: [
             { text: "Ask Oliver to come over and spend the night", nextId: 11 },
             { text: "Go home and make plans later", nextId: 112},
