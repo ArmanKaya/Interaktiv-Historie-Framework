@@ -78,7 +78,7 @@ const storyData = [
 
     {
         id: 8,
-        texts: ["Suddenly, you hear a loud sound. There's someone here."],
+        texts: ["Suddenly, you hear a loud sound. There's something here."],
         choices: [
             { text: "Approach the sound", nextId: 202 },
             { text: "Run away", nextId: 9 },
@@ -108,7 +108,7 @@ const storyData = [
 
     {
         id: 10,
-        texts: ["Oliver: 'This is getting really creepy, but it's getting late. We should head back.'"],
+        texts: ["Oliver: [playerName].. you realize there is no way back now right? what if the police tracks our dna and links the murder to us... Anyway this is getting really creepy.. but it's getting late. We should head back.'"],
         choices: [
             { text: "Ask Oliver to come over and spend the night", nextId: 11 },
             { text: "Go home and make plans later", nextId: 112},
