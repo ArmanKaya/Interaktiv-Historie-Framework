@@ -1,9 +1,9 @@
 const storyData = [
     { 
         id: 1,
-        texts: ["At 14, [playerName]'s family moved outside the big city into a smaller town to find silence, but one day that silence was broken. Suddenly, I got a call. My friend Oliver called me. I figured he just wanted to play something, but no. It was our friend Niels. Niels had died. It was labeled as suicide."],
+        texts: ["At 14, [playerName]'s family moved outside the big city into a smaller town to find silence, but now at 18, that silence was broken. Suddenly, I got a call. My friend Oliver called me. I figured he just wanted to play something, but no. It was our friend Niels. Niels had died. It was labeled as suicide."],
         choices: [
-            { text: "Attend his funeral", nextId: 2},
+            { text: "Attend his funeral", nextId:  2},
         ]
     },
 
